@@ -28,7 +28,6 @@ function actualizarTabla() {
             const fila = document.createElement('tr');
             fila.innerHTML = `
                 <td>${index + 1}</td>
-                <td>${new Date().toLocaleString()}</td>
                 <td data-nombre="${valor.titulo}">${valor.titulo}</td>
                 <td data-valor="${valor.valor}">${parseFloat(valor.valor).toFixed(3)}</td>
             `;
